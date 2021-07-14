@@ -4,6 +4,16 @@ body {
     padding-top: 60px;
 }
 
+.container-fluid {
+    margin:0;
+    padding:0;
+}
+
+.row {
+    margin-left:-15px;
+    margin-right:0;
+}
+
 nav h1 {
     font-size:40px;
     text-align:center;
@@ -48,9 +58,42 @@ header li a:hover {
   }
 
   .cover-image img {
-    height:600px;
-    width: 1340px; 
+    height:550px;
+    width: 100%; 
   }
+
+/*-------------Intro Section---------------*/
+.top-heading {
+    padding-top:90px;
+    padding-bottom: 15px;;
+    margin-bottom: 20px;
+    margin-top:-20px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#343A40;
+
+}
+.intro-image
+ {
+    height:auto;
+    width:100%;
+    margin-bottom: 50px;
+    opacity: 0.9;
+    border-radius: 2%;
+}
+.head-intro{
+    margin-top:-70px;
+    margin-bottom:20px;
+}
+
+.intro-text {
+    margin-left:20px;
+    padding:25px;
+    font-size:20px;
+    letter-spacing:4px;
+    color: #343A40;
+    text-transform:uppercase;
+}
 
 
 
@@ -58,11 +101,9 @@ header li a:hover {
 footer{
    background-color:#343A40; 
 }
-footer p{
-    color:#E8E09A;
-}
-footer a{
+footer a,p{
     text-decoration:none;
+    color:#E8E09A;
 
 }
 
