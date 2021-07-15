@@ -16,7 +16,7 @@
     <!---Naigation Bar was copied from my previous project, then modified-->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#"><h1 class="name">Explore Ethopia!</h1>
+            <a class="navbar-brand" href="#"><h1 class="name">Explore Ethiopia!</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,11 +52,39 @@
     </section>
 
 <!--Form Section-->
+<section>
+    <div class="container-fluid">
+        <p class="form-text">If you have any questions regarding any places in Ethiopia or if you need any suggestions on your trip,
+            feel free to drop us an e-mail and we will be happy to assist you. <span><i class="fas fa-sun"></i></span>
+        </p>
+     </div>
+
+     <div id="form">
+        <form action="." method="GET" class="fill-form responsive-height">
+            <h2 class="form-title">Write To Us!</h2>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name" required>
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Message Us!</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+              </div>
+              <div>
+                    <label for="submit"></label>
+                    <input class="btn-submit" type="submit" name="submit" id="submit" value="Send">
+                
+              </div>
+            </form>
+
+     </div>
+</section>
 
 <footer class="footer mt-auto">
     <div class="container">
-      <p>Copyright: komfiGolabi 2021</p>
-      <a href="contact.html">Contact Us!</a>
+      <p id="contact-footer-p">Copyright: komfiGolabi 2021</p>
     </div>
 
 </footer>
