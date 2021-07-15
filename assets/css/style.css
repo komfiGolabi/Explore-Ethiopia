@@ -2,8 +2,11 @@ body {
     background-color: #E8E09A;
     font-family: "Ubuntu", sans serif;
     padding-top: 60px;
-    margin-bottom:0;
+    margin-bottom:-16px;
+
 }
+
+
 
 .container-fluid {
     margin:0;
@@ -97,10 +100,11 @@ header li a:hover {
     text-transform:uppercase;
 }
 
-/*-------------Contact Section---------------*/
+/*-------------Form Section---------------*/
 
 .form-images{
     max-width:100%;
+    padding-top:22px;
 
 }
 #addis,
@@ -115,7 +119,26 @@ header li a:hover {
     padding-right:0px;
 }
 
-
+.form-text{
+    color:#343A40;
+    padding: 20px;
+    font-size: 20px;;
+}
+.fill-form{
+    text-align: center;
+    text-transform: uppercase;
+    padding:30px;
+}
+.btn-submit {
+    background-color:#343A40;
+    color:#E8E09A;
+    text-transform: uppercase;
+    
+}
+.btn-submit:hover {
+    background-color: #FF8303;
+    color:#343A40;
+}
 
 
 
@@ -126,6 +149,11 @@ footer{
 footer a,p{
     text-decoration:none;
     color:#E8E09A;
+
+}
+#contact-footer-p{
+    padding-top:20px;
+    padding-bottom: 20px;
 
 }
 
