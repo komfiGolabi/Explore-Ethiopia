@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Explore Ethiopia</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_5d7w39lg2f0Fov0iGrFVW");
+   })();
+</script>
 </head>
 <body>
     <!---Naigation Bar was copied from my previous project, then modified-->
@@ -60,17 +68,17 @@
      </div>
 
      <div id="form">
-        <form action="." method="GET" class="fill-form responsive-height">
+        <form onsubmit="return sendMail(this)";  action="." method = "POST" class="fill-form responsive-height">
             <h2 class="form-title">Write To Us!</h2>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Name" required>
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              <input type="email" class="form-control" name="emailaddress" id="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group">
                 <label for="comments">Message Us!</label>
-                <textarea class="form-control" id="comments" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3" name="message"></textarea>
               </div>
               <div>
                     <label for="submit"></label>
@@ -92,6 +100,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>   
-
+    <script src="assets/js/form.js"></script>
 </body>
 </html>
