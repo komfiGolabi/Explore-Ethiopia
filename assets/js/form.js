@@ -6,10 +6,15 @@ function sendMail(contactForm){
     .then(
         function(response) {
             console.log("Your message has been sent. We get back to you shortly!" , response);
+            alert("Your message has been sent. We get back to you shortly!");
         },
         function(error){
             console.log("Oops, something went wrong! Try again!", error);
+            alert("Oops, something went wrong! Try again!");
         }
     );
+
+    
     return false;
 }
+
