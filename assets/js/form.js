@@ -1,3 +1,10 @@
+/*function clearIt(){
+    document.getElementById('name').value='';
+    document.getElementById('email').value='';
+    document.getElementById('message').value='';
+    }
+
+*/
 
 function sendMail(contactForm){
     emailjs.send("gmail", "explore-ethio",{
@@ -14,7 +21,13 @@ function sendMail(contactForm){
         }
     );
 
-    
     return false;
+
 }
+
+function clearIt(){
+    document.getElementById('name').value='';
+    document.getElementById('email').value='';
+    document.getElementById('message').value='';
+    }
 
