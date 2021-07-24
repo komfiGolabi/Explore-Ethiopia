@@ -1,16 +1,30 @@
-/*google documentation 
+function initMap(){
+    const ethioLocation = { lat : 9.1450 , lng: 40.4897};
+    var map =  new google.maps.Map(document.getElementById("map"), {
+        zoom: 6,
+        center: ethioLocation,
+    });
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   
 
-function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.036 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
+    // all locations details taken from https://latitudelongitude.org/
+    var locations = [
+        { lat : 9.02497 , lng : 38.74689},
+        { lat : 14.12448 , lng: 38.72444},
+        { lat: 11.59364 , lng: 37.39077},
+        { lat: 12.6 , lng: 37.46667},
+        { lat: 9.31387 , lng: 42.11815},
+        { lat: 12.03333 , lng: 39.03333},
+    ];
+
+    var markers = locations.map(function(location, i) {
+    return new google.maps.Marker({
+    position: location,
+    label: labels[i % labels.length],
     });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }/*
+});
+
+
+var markerCluster = new MarkerClusterer(map, markers,
+    {imagePath: `${"https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"}/m`});
+}
