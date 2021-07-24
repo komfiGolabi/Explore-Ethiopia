@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+   
     <title>Explore Ethiopia</title>
 </head>
 <body>
@@ -62,9 +63,21 @@
                 </div>
         </div>
     </section>
-    <section>
-        <div class="container-fluid">
 
+
+    <!--Quiz section-->
+    <section>
+        <div>
+            <h2>Check Your knowledge about Ethiopia!</h2>
+        </div>
+        <div id="ethioQuiz" class="quiz-box">
+            <div id="quizQuestion">
+
+            </div>
+            <div id="quizAnswer">
+
+            </div>
+            
         </div>
     </section>
 
@@ -84,42 +97,14 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>   
-    <script>
-        function initMap(){
-            const ethioLocation = { lat : 9.1450 , lng: 40.4897};
-            var map =  new google.maps.Map(document.getElementById("map"), {
-                zoom: 6,
-                center: ethioLocation,
-            });
-            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-           
-        
-            // all locations details taken from https://latitudelongitude.org/
-            var locations = [
-                { lat : 9.02497 , lng : 38.74689},
-                { lat : 14.12448 , lng: 38.72444},
-                { lat: 11.59364 , lng: 37.39077},
-                { lat: 12.6 , lng: 37.46667},
-                { lat: 9.31387 , lng: 42.11815},
-                { lat: 12.03333 , lng: 39.03333},
-            ];
-
-            var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length],
-            });
-        });
-
-        
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: `${"https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"}/m`});
-        }
-    </script>
+   
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQOXyjZS9XcOrbbc2yp_uL51V-cS4QYqg&callback=initMap&libraries=&v=weekly"
     async
-  ></script>
+    
+    ></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/quiz.js"></script>   
 </body>
 </html>
