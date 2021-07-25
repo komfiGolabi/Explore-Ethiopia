@@ -3,51 +3,51 @@ let quiz = {
   // q-questions, o-answer options, a-correct answer
     data: [
     {
-      q : "<h3>What is the capital of Ethiopia?</h3>",
-      o : [
-       "<p>Mekele</p>",
-       "<p>Aksum</p>",
-       "<p>Addis Ababa</p>",
+      quest : "<h3>What is the capital of Ethiopia?</h3>",
+      opt : [
+       "Mekele",
+       "Aksum",
+       "Addis Ababa",
       ],
-      a : 2 // correct answer is a third position, number 2 in index .
+      answ : 2 // correct answer is a third position, number 2 in index .
     },
     {
-      q : "<h3>What drink is Ethiopia famous for?</h3>",
-      o : [
+      quest : "<h3>What drink is Ethiopia famous for?</h3>",
+      opt : [
         "tea",
         "coffee",
         "beer",
     
       ],
-      a : 1
+      answ : 1
     },
     {
-      q : "Which animal is endemic fo Ethiopia?",
-      o : [
+      quest : "Which animal is endemic fo Ethiopia?",
+      opt : [
         "lion",
         "tiger",
         "gelada monkey",
       ],
-      a : 2
+      answ : 2
     },
     {
-      q : "What is one of the official languages in Ethiopia?",
-      o : [
+      quest : "What is one of the official languages in Ethiopia?",
+      opt : [
         "Amharic",
         "Wolof",
         "Twi",
       ],
-      a : 0
+      answ : 0
     },
     {
-      q : "In which part of Africa lies Ethiopia ?",
-      o : [
+      quest : "In which part of Africa lies Ethiopia ?",
+      opt : [
         "East Africa",
         "West Africa",
         "South Africa",
         
       ],
-      a : 0
+      answ : 0
     }
     ],
   
@@ -56,7 +56,6 @@ let quiz = {
     htmlQuestion: null, // HTML question wrapper
     htmlAnswer: null, // HTML answers wrapper
   
-    // (A3) GAME FLAGS
     now: 0, // current question
     score: 0, // current score
   
@@ -82,18 +81,18 @@ let quiz = {
     // (C) DRAW QUESTION
     draw: function(){
       // (C1) QUESTION
-      quiz.htmlQuestion.innerHTML = quiz.data[quiz.now].q;
+      quiz.htmlQuestion.innerHTML = quiz.data[quiz.now].quest;
   
       // (C2) OPTIONS
       quiz.htmlAnswer.innerHTML = "";
-      for (let i in quiz.data[quiz.now].o) {
+      for (let i in quiz.data[quiz.now].opt) {
         let radio = document.createElement("input");
         radio.type = "radio";
         radio.name = "quiz";
         radio.id = "quizo" + i;
         quiz.htmlAnswer.appendChild(radio);
         let label = document.createElement("label");
-        label.innerHTML = quiz.data[quiz.now].o[i];
+        label.innerHTML = quiz.data[quiz.now].opt[i];
         label.setAttribute("for", "quizo" + i);
         label.dataset.idx = i;
         label.addEventListener("click", quiz.select);
@@ -110,7 +109,7 @@ let quiz = {
       }
   
       // (D2) CHECK IF CORRECT
-      let correct = this.dataset.idx == quiz.data[quiz.now].a;
+      let correct = this.dataset.idx == quiz.data[quiz.now].answ;
       if (correct) { 
         quiz.score++; 
         this.classList.add("correct");
