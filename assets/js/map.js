@@ -30,20 +30,28 @@ var markerCluster = new MarkerClusterer(map, markers,
 }
 */
 
-function addMarker(location){
+function addMarker(property){
     const marker = new google.maps.Marker({
-        position: location,
+        position: property.location,
         map: map,
  });
 
+ const infoPop = new google.maps.InfoWindow({
+     content: property.content,
+ });
+
+ marker.addListener("click" , () =>{
+ infoPop.open(map, marker);
+
+});
+
 }
-
-addMarker({ lat : 9.02497 , lng : 38.74689}); //addis marker
-addMarker({ lat : 14.12448 , lng: 38.72444}); //aksum marker
-addMarker({ lat: 11.59364 , lng: 37.39077}); //bahir dar marker
-addMarker({ lat: 12.6 , lng: 37.46667}); // gondar marker
-addMarker({ lat: 9.31387 , lng: 42.11815}); // harar marker
-addMarker({ lat: 12.03333 , lng: 39.03333}); //lalibela marker
-
+addMarker({location: {lat : 9.02497 , lng : 38.74689} ,
+content: '<h2>lalalallala</h2>'}); //addis marker
+addMarker({location: { lat : 14.12448 , lng: 38.72444}}); //aksum marker
+addMarker({location: { lat: 11.59364 , lng: 37.39077}}); //bahir dar marker
+addMarker({location: { lat: 12.6 , lng: 37.46667}}); // gondar marker
+addMarker({location: { lat: 9.31387 , lng: 42.11815}}); // harar marker
+addMarker({location: { lat: 12.03333 , lng: 39.03333}}); //lalibela marker
 
 }
