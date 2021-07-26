@@ -16,7 +16,7 @@ function initMap(){
         { lat: 9.31387 , lng: 42.11815},
         { lat: 12.03333 , lng: 39.03333},
     ];
-
+/*
     var markers = locations.map(function(location, i) {
     return new google.maps.Marker({
     position: location,
@@ -26,5 +26,24 @@ function initMap(){
 
 
 var markerCluster = new MarkerClusterer(map, markers,
-    {imagePath: `${"https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"}/m`});
+    {imagePath: `https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js/m`});
+}
+*/
+
+function addMarker(location){
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+ });
+
+}
+
+addMarker({ lat : 9.02497 , lng : 38.74689}); //addis marker
+addMarker({ lat : 14.12448 , lng: 38.72444}); //aksum marker
+addMarker({ lat: 11.59364 , lng: 37.39077}); //bahir dar marker
+addMarker({ lat: 12.6 , lng: 37.46667}); // gondar marker
+addMarker({ lat: 9.31387 , lng: 42.11815}); // harar marker
+addMarker({ lat: 12.03333 , lng: 39.03333}); //lalibela marker
+
+
 }
