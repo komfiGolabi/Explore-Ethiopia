@@ -46,12 +46,18 @@ function addMarker(property){
 });
 
 }
-addMarker({location: {lat : 9.02497 , lng : 38.74689} ,
-content: '<h2>lalalallala</h2>'}); //addis marker
-addMarker({location: { lat : 14.12448 , lng: 38.72444}}); //aksum marker
-addMarker({location: { lat: 11.59364 , lng: 37.39077}}); //bahir dar marker
-addMarker({location: { lat: 12.6 , lng: 37.46667}}); // gondar marker
-addMarker({location: { lat: 9.31387 , lng: 42.11815}}); // harar marker
-addMarker({location: { lat: 12.03333 , lng: 39.03333}}); //lalibela marker
+addMarker({location: {lat : 9.02497 , lng : 38.74689},
+    content:
+     '<h6>Addis Ababa</h6><br><p class="info">Addis-capital of Ethiopia, great and vibrant city, that offers great places to visit, great food to eat and kind people to chat with.</p>'}); //addis marker
+addMarker({location: { lat : 14.12448 , lng: 38.72444}, 
+    content:'<h6>Aksum</h6><br><p class="info">Aksum carries the history of the Axumite civilization and the place, where allegedly Arc of Covenant is kept</p>'}); //aksum marker
+addMarker({location: { lat: 11.59364 , lng: 37.39077},
+     content: '<h6>Bahir Dar</h6><br><p class="info">Bahir Dar and its lake Tana offers you beautiful scenery and traditional monasteries spread on the little islands on the lake</p>'}); //bahir dar marker
+addMarker({location: { lat: 12.6 , lng: 37.46667}, 
+    content: '<h6>Gondar</h6><br><p class="info"></p>'}); // gondar marker
+addMarker({location: { lat: 9.31387 , lng: 42.11815},
+     content: '<h6>Harar</h6>'}); // harar marker
+addMarker({location: { lat: 12.03333 , lng: 39.03333}, 
+    content: '<h6>Lalibela</h6>'}); //lalibela marker
+};
 
-}
