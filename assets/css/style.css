@@ -237,6 +237,10 @@ h2{
     align-items: center;
 }
 
+.hidden{
+    display: none;
+}
+
 
 .info{
     color:#343A40;
