@@ -77,7 +77,7 @@ addMarker({location: { lat: 9.31387 , lng: 42.11815},
 addMarker({location: { lat: 12.03333 , lng: 39.03333}, 
     
     content: '<h6>Lalibela</h6>',
-    marker_id : 2
+    marker_id : 6
    }); //lalibela marker
 };
 
