@@ -1,10 +1,3 @@
-/*function clearIt(){
-    document.getElementById('name').value='';
-    document.getElementById('email').value='';
-    document.getElementById('message').value='';
-    }
-
-*/
 
 function sendMail(contactForm){
     emailjs.send("gmail", "explore-ethio",{
@@ -14,10 +7,12 @@ function sendMail(contactForm){
         function(response) {
             console.log("Your message has been sent. We get back to you shortly!" , response);
             alert("Your message has been sent. We get back to you shortly!");
+            contactForm.reset();
         },
         function(error){
             console.log("Oops, something went wrong! Try again!", error);
             alert("Oops, something went wrong! Try again!");
+            contactForm.reset();
         }
     );
 
@@ -25,9 +20,4 @@ function sendMail(contactForm){
 
 }
 
-function clearIt(){
-    document.getElementById('name').value='';
-    document.getElementById('email').value='';
-    document.getElementById('message').value='';
-    }
 

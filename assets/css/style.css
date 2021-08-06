@@ -248,11 +248,11 @@ h2{
 .hidden{
     display: none;
 }
-
+/*
 .mark-box{
-    padding-right: 50px;;
+    padding-right: 50px;
 }
-
+*/
 .marker-image{
     width:100%;
     height:300px;
