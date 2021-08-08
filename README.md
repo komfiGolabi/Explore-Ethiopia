@@ -73,18 +73,20 @@ All text content was written by me-Kamila Golebiowska. For some of the content a
 
 Hompage:
 
-* [Lady and the blue background from Pexels.com]()
-* [Dumbell and Shoes](file:///C:/Users/komfa/Downloads/dumbbells-2465478_1920.jpg)
-* [Welcome Image](https://www.theglobeandmail.com/life/health-and-fitness/health-advisor/strengthen-your-glutes-for-better-balance-and-less-pain/article36799024/)
-* [Testimonial 1-taken from Unsplash.com](https://unsplash.com/photos/2EGNqazbAMk)
-* [Testimonial 2- taken from Unsplash.com](https://unsplash.com/photos/tNCH0sKSZbA)
-* [Testimonial 3- taken from Unsplash.com](https://unsplash.com/photos/SKFdd8JGU-0)
-
-
+* [Cover picture with the hills and the sunset from Unsplash.com](https://unsplash.com/photos/umW41izr5BI)
+* [Entoto hill with a minibus taken from Unsplash.com](https://unsplash.com/photos/RBop1DFEDUs)
+* [Addis marker photo](https://usercontent.one/wp/www.diamondhoteladdisababa.com/wp-content/uploads/2017/08/cityview.jpg)
+* [Bahir-Dar marker photo](https://www.timbuktutravel.com/region/bahir-dar)
+* [Aksum marker photo](https://5-five-5.blogspot.com/2020/07/aksum-ethiopia.html)
+* [Harar marker photo](https://farandwild.travel/africa/ethiopia/harar)
+* [Lalibela marker photo](https://www.vogue.com/article/three-days-in-lalibela-ethiopia)
+* [Gondar marker photo](https://www.greendreamacademy.com/citymarketing-gondar-ethiopia/)
 
 Contact:
 
-* [Form Background image- taken from Unsplash.com](https://unsplash.com/photos/J154nEkpzlQ)
+* [Church from Lalibela taken from Unsplash.com](https://unsplash.com/photos/6SgfEwkA02Y)
+* [Boy and the mountains taken from Unsplash.com ](https://unsplash.com/photos/thUSm2Ib96E)
+* [Addis Ababa at night taken from Unsplash](https://unsplash.com/photos/MUcM3GCCQPk)
 
 
 ### Icons and Fonts
@@ -92,6 +94,8 @@ Contact:
 Font I used was Oswald taken from [Google Fonts](https://fonts.google.com/) 
 
 Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from=io)
+
+
 
 ### Code
 
