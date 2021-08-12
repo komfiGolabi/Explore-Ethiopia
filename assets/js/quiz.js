@@ -48,26 +48,60 @@ let quiz = {
         
       ],
       answ : 0
-    }
+    },
+    { quest: "How many months are there in Ethiopian calendar?",
+      opt: [
+        "12",
+        "10", 
+        "13"
+    ],
+    answ: 2
+},
+
+    {quest: "What country almost managed to colonize Ethiopia?",
+      opt: ["France",
+             "Italy",
+             "United Kingdom",
+            ],
+             answ: 1
+},
+     {quest: "What is the name of Ethiopian bread?",
+     opt: ["doughnut",
+           "croissant",
+           "injera",
+          ],
+           answ: 2
+},
+      {quest: "What is the population of Ethiopia?",
+      opt: ["50 million",
+            "110 million",
+            "75 million"],
+           answ: 1
+},
+{    quest : "What is the name of the popular Ethiopian dance?",
+     opt:["Eskesta",
+           "Rumba",
+           "Azonto"],
+           answ: 0
+},
     ],
   
-    // (A2) HTML ELEMENTS
-    htmlBox: null, // HTML quiz container
-    htmlQuestion: null, // HTML question wrapper
-    htmlAnswer: null, // HTML answers wrapper
+    // HTML ELEMENTS
+   // htmlBox: null, // HTML quiz container
+   // htmlQuestion: null, // HTML question wrapper
+   // htmlAnswer: null, // HTML answers wrapper
   
     now: 0, // current question
     score: 0, // current score
   
     // (B) INIT QUIZ HTML
     init: function(){
-      // (B1) WRAPPER
       quiz.htmlBox = document.getElementById("ethioQuiz");
   
-      // (B2) QUESTIONS SECTION
-      quiz.htmlQuestion = document.createElement("div");
-      quiz.htmlQuestion.id = "quizQuestion";
-      quiz.htmlBox.appendChild(quiz.htmlQuestion);
+      // (B2) QUESTIONS SEction
+     quiz.htmlQuestion = document.createElement("div");
+     quiz.htmlQuestion.id = "quizQuestion";
+     quiz.htmlBox.appendChild(quiz.htmlQuestion);
   
       // (B3) ANSWERS SECTION
       quiz.htmlAnswer = document.createElement("div");
@@ -80,7 +114,6 @@ let quiz = {
   
     // (C) DRAW QUESTION
     draw: function(){
-      // (C1) QUESTION
       quiz.htmlQuestion.innerHTML = quiz.data[quiz.now].quest;
   
       // (C2) OPTIONS
