@@ -180,16 +180,14 @@ h2{
     color:#343A40;
 }
 /* answers */
-#ethioQuiz,
-.quiz-box {
+#ethioQuiz{
    max-width: 80%;
    margin: 20px auto;
    height:500px;
    background-color: #343A40;
   }
   
-  /* (B) QUESTIONS */
-  #quizQuestion {
+#quizQuestion {
     padding: 10px;
     color:#E8E09A;
     font-size: 24px;
@@ -197,7 +195,7 @@ h2{
     text-align: center;
   }
   
-  /*answers */
+
 #quizAnswer {
     margin:30px 20px;
     display: grid;

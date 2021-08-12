@@ -3,7 +3,7 @@ let quiz = {
   // q-questions, o-answer options, a-correct answer
     data: [
     {
-      quest : "<h3>What is the capital of Ethiopia?</h3>",
+      quest : "What is the capital of Ethiopia?",
       opt : [
        "Mekele",
        "Aksum",
@@ -12,7 +12,7 @@ let quiz = {
       answ : 2 // correct answer is a third position, number 2 in index .
     },
     {
-      quest : "<h3>What drink is Ethiopia famous for?</h3>",
+      quest : "What drink is Ethiopia famous for?",
       opt : [
         "tea",
         "coffee",
