@@ -1,4 +1,5 @@
 //code taken from https://code-boxx.com/simple-javascript-quiz/ and modified
+/*
 let quiz = {
   // q-questions, o-answer options, a-correct answer
     data: [
@@ -162,3 +163,4 @@ let quiz = {
     }
   };
   window.addEventListener("load", quiz.init);
+  */
