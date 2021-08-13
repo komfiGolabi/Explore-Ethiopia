@@ -55,7 +55,6 @@ const questionArray =  [
         ],
     answ: 2
     },
-
     {quest: "What country almost managed to colonize Ethiopia?",
       opt: ["France",
              "Italy",
@@ -63,7 +62,7 @@ const questionArray =  [
             ],
              answ: 1
     },
-     {quest: "What is the name of Ethiopian bread?",
+    {quest: "What is the name of Ethiopian bread?",
      opt: ["doughnut",
            "croissant",
            "injera",
@@ -154,7 +153,20 @@ window.addEventListener("load",function (){
   randomizedQuestionsArray = shuffle(questionArray);
   displayQuestion(randomizedQuestionsArray[currentQuestionIndex]);
 });
+/*
+function detachOnclick(){
+  let allAnswers = document.getElementsByClassName('answer');
+  for (let button of allAnswers) {
+  button.removeEventListener("click", randomizedQuestionsArray.detachOnclick);
+ }
+};
+detachOnclick();
 
+function loseFocus() {
+ document.querySelector("answer").blur();
+}
+loseFocus(answersArray);
+*/
 restartButton.addEventListener('click', function(e) {
   location.reload();
 }, false);
