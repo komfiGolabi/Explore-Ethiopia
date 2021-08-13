@@ -86,9 +86,10 @@ const questionArray =  [
 let randomizedQuestionsArray = [];
 let currentQuestionIndex = 0;
 let currentScore = 0;
+let restartButton = document.getElementById('refresh');
 
 function shuffle(array) {
-    var currentIndex = array.length,  randomIndex;
+    var currentIndex = array.length, randomIndex;
   
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
@@ -101,6 +102,7 @@ function shuffle(array) {
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
+   
   
     return array;
 }
@@ -152,4 +154,8 @@ window.addEventListener("load",function (){
   randomizedQuestionsArray = shuffle(questionArray);
   displayQuestion(randomizedQuestionsArray[currentQuestionIndex]);
 });
+
+restartButton.addEventListener('click', function(e) {
+  location.reload();
+}, false);
 

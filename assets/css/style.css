@@ -221,14 +221,36 @@ h2{
        margin-bottom: 20px;
    }
    #refresh{
-       display:none;
-   }
-   .answer:hover{
-       background-color:#343A40;
+    width:20%;
+    margin-left:40%;
+    margin-top: 30px;
+    background-color: #E8E09A;
+    border-color: #E8E09A;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: #343A40;
+}
+
+#refresh:hover{
+    background-color: #FF8303;
+    border-color:#FF8303;
+    color:#E8E09A;
+    
+}
+   
+  .answer:hover{
+       background-color:#FF8303;
        color:#E8E09A;
        border: #E8E09A;
        border-width: 5px;
    }
+   .answer:focus{
+    background-color:#FF83030 !important;
+    color:#E8E09A !important;
+    border: #E8E09A !important;
+    border-width:5px;
+}
+
    
    
 
