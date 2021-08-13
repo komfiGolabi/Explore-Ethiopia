@@ -188,45 +188,49 @@ h2{
   }
   
 #quizQuestion {
-    padding: 10px;
+    padding-top:20px;
+    padding-bottom: 50px;
     color:#E8E09A;
     font-size: 24px;
     border-radius: 10px;
     text-align: center;
   }
+  #quizScore {
+      text-align: center;
+      color:#E8E09A;
+      font-size: 20px;
+  }
   
 
-#quizAnswer {
-    margin:30px 20px;
-    display: grid;
-    grid-template-columns: 80%;
-    grid-gap: 10px;
-    color:#343A40;
-    text-transform: uppercase;
-}
-  
-#quizAnswer input {
-     display: none; 
-}
-
-#quizAnswer label {
+.answer{
     background-color: #E8E09A;
+    border-color: #E8E09A;
     border-radius: 10px;
+    color: #343A40;
+    display: grid;
+    text-transform: uppercase;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
     text-align: center;
-    color: #343A40;
-    margin-left:25%;
-}
+   }
 
-#quizAnswer label.correct {
-    background-color: #60a03f;
-}
-#quizAnswer label.wrong {
-    background: #FF3F00;
-    border: 1px solid #c78181;
-}
+   .btn {
+       width:80%;
+       margin-left:10%;
+       margin-bottom: 20px;
+   }
+   #refresh{
+       display:none;
+   }
+   .answer:hover{
+       background-color:#343A40;
+       color:#E8E09A;
+       border: #E8E09A;
+       border-width: 5px;
+   }
+   
+   
 
 
 
