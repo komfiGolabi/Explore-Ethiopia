@@ -71,6 +71,7 @@
     </div>
     <!--Quiz section-->
     <section>
+        <!--
         <div>
             <h2>Check Your knowledge about Ethiopia!</h2>
         </div>
@@ -82,8 +83,34 @@
 
             </div>
             
+        </div>-->
+    </section>
+
+
+    <!--Quiz section 2-->
+    <section>
+        <div>
+            <h2>Check Your knowledge about Ethiopia!</h2>
+        </div>
+        <div id="ethioQuiz" class="quiz-box">
+            <div id="quizQuestion">
+
+            </div>
+            <div id="quizAnswer">
+                    <button class="btn btn-primary answer" id="option1" data-index=0></button>
+                    <button class="btn btn-primary answer" id="option2" data-index=1></button>
+                    <button class="btn btn-primary answer" id="option3" data-index=2></button>
+            </div>
+            <div id="quizScore">
+                0
+            </div>
+            <div>
+                <button class="btn btn-primary" id="refresh"></button>
+            </div>
+            
         </div>
     </section>
+
 
   <div class="icon">
       <span>
@@ -213,14 +240,14 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>   
-   
+    <script src="assets/js/map.js"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQOXyjZS9XcOrbbc2yp_uL51V-cS4QYqg&callback=initMap&libraries=&v=weekly"
     async
-    
     ></script>
-    <script src="assets/js/map.js"></script>
-    <script src="assets/js/quiz.js"></script>   
+    
+    <script src="assets/js/quiz.js"></script> 
+    <script src="assets/js/quiz2.js"></script>   
 </body>
 </html>
