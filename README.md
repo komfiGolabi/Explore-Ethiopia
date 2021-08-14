@@ -65,9 +65,9 @@ This section will provide a contact form where user will be able to get in touch
 
 
 ## Credits
+
 ### Content
 All text content was written by me-Kamila Golebiowska. For some of the content about places I used wikipedia and lonely planet page to confirm my knowledge and doubts.
-
 
 ### Images 
 
@@ -101,7 +101,8 @@ Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from
 
  * Navbar Menu was taken from Whiskey Drop Project from Code Institute with Bootstrap, but I simplified it and added my own styling with CSS.
  * Used Bootstrap for the responsive structure in whole project.
- * [quiz](https://code-boxx.com/simple-javascript-quiz/)
+ * [footer taken from Bootstrap](https://getbootstrap.com/docs/4.6/examples/sticky-footer/)
+ * [quiz](https://code-boxx.com/simple-javascript-quiz/) and help from my mentor Antonio Rodriquez
  I used the structure of the code, I changed it for my needs and styled it to match the page.
  * Booking form was taken from the Bootstrap component section and modified for the project.
  [Form- form control](https://getbootstrap.com/docs/4.6/components/forms/)
@@ -118,7 +119,10 @@ Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from
 
 ## Handling Bugs and what is remaining
 ### My struggles
+* Javascript, especially quiz section.
+* Google Maps APIS , had to add an API key everytime I was starting my repository from Github.
 ### Existing Bugs
+
 
 
  
