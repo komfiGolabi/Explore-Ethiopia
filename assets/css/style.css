@@ -244,21 +244,15 @@ h2{
        border: #E8E09A;
        border-width: 5px;
    }
-   .answer:focus{
-    background-color:#FF83030 !important;
-    color:#E8E09A !important;
-    border: #E8E09A !important;
+   .answer:focus {
+    background-color:#FF8303;
+    color:#E8E09A;
+    border: #E8E09A;
     border-width:5px;
 }
 
    
-   
-
-
-
-
-
-/*------------------Map Section--------*/
+   /*------------------Map Section--------*/
 
 #map {
     height:500px;
@@ -268,25 +262,109 @@ h2{
     align-items: center;
 }
 
+.map-intro{
+    padding-bottom: 15px;;
+    margin-bottom: 20px;
+    margin-top:-20px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#343A40; 
+}
+
 .hidden{
     display: none;
 }
-/*
-.mark-box{
-    padding-right: 50px;
-}
-*/
+
 .marker-image{
     width:100%;
     height:300px;
     margin-bottom:20px;
 }
+.places-link{
+    text-decoration: none;
+    font-weight:bold;
+    color:#343A40;
+}
 
+.places-link:hover {
+    text-decoration: none;
+    color:#FF8303;
+    font-weight:bold;
+}
 
 
 .content-heading{
     text-align:center;
-   /* padding-top:-20px;*/
     padding-bottom:20px;
 }
+
+/*-------------Media Querys------------------*/
+
+
+@media screen and (min-width:320px) and (max-width:380px){
+    .name {
+        padding-left:10px;
+        padding-right:0px;
+        font-size: x-large;
+    }
+
+    header li a {
+        font-size: large;
+    }
+
+    #refresh{
+        width:30%;
+        margin-left:35%;
+        color:#E8E09A;
+        background-color: #343A40;
+    }
+    .cover-image img {
+        height:auto;
+        width: 100%; 
+      }
+      .navbar{
+          padding-bottom:15px;
+      }
+
+      header li a {
+          font-size: large;
+      }
+      .form-images{
+          padding-top:0;
+      }
+    .marker-image{
+        width:100%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:453px){
+    .name {
+        padding-left:10px;
+        padding-right:0px;
+        font-size:x-large;
+    }
+    header li a {
+        font-size: large;
+    }
+    .intro-text{
+        font-size: large;
+    }
+    #refresh{
+        width:30%;
+        margin-left:35%;
+        color:#E8E09A;
+        background-color: #343A40;
+    }
+    .cover-image img {
+        height:auto;
+        width: 100%; 
+      }
+      .marker-image{
+        width:100%;
+        height:auto;
+    }
+    
+}
+     
 
