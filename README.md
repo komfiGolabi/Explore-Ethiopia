@@ -2,7 +2,12 @@
 ##  Code created by Kamila Golebiowska for Code Institute
 ## Languages used: HMTL, CSS with Bootstrap Framework and Javascript.
 
+
 [Explore Ethiopia Live Page](https://komfigolabi.github.io/Explore-Ethiopia/)
+
+
+![project on different devices](assets/images/ee-page.jpg)
+
 
 
 
@@ -23,13 +28,22 @@ Footer will be pretty basic, containing the copyright and a link to contact us p
 ### Home Page:
 
 Homepage will include basic navbar and a footer in the same color. It will have a cover image that shows the beauty of Ethiopia. Underneath would like to attach another photo and a statement with a page introduction. It will have a simple quiz with questions about Ethiopia as a form of entartaining the user and broadening the knowledge about the country.
+![quiz](assets/images/quiz.jpg)
  A map using Google Map API will be added with markers showing the top places that are worthy of a visit.Once marker is clicked it will offer more information about the chosen place.
+
+ ![MAp before clicking the marker](assets/images/map.jpg)
+
+ ![Map after clicking a marker](assets/images/map-content.jpg)
 
 
 ### Contact Us
 
 This section will provide a contact form where user will be able to get in touch about any issues or in case of any questions regarding Ethiopia or the places marked on the map.Apart from the form it will have a set of attractive photos of the country.
- ![Form]()
+
+ ![Form](assets/images/form.jpg)
+
+ Form is connected through email.js to my personal e-mail, so I will get a message sent online and a user will receive one as well, as a confirmation.
+ [Email JS](https://www.emailjs.com/)
 
 
 
@@ -132,17 +146,19 @@ Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from
 
 ## Testing
 
-[Check responsiveness]()
+[Check responsiveness](http://ami.responsivedesign.is/?url=https%3A%2F%2Fkomfigolabi.github.io%2FExplore-Ethiopia%2F)
 
 [HTML Validator Page](https://validator.w3.org/)
 
 * After testing Homepage in direct input, there were no errors or warnings
 * contact page showed no errors, but had few warnings regarding the type for assingment to javascript.
 
-![image of passed html validator page()
+![image of passed html validator page](assets/images/html-validation.jpg)
 
 [CSS Validator Page](https://jigsaw.w3.org/css-validator/)
 * Code from style.css was copied as a direct input into the CSS validator page and no errors were found.
+
+
 
 Google Dev Tool: Lighthouse 
 
