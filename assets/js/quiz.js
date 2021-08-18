@@ -1,8 +1,4 @@
-//code taken from https://code-boxx.com/simple-javascript-quiz/ and modified
-/*
-let quiz = {
-  // q-questions, o-answer options, a-correct answer
-    data: [
+const questionArray =  [
     {
       quest : "What is the capital of Ethiopia?",
       opt : [
@@ -50,117 +46,176 @@ let quiz = {
       ],
       answ : 0
     },
-    { quest: "How many months are there in Ethiopian calendar?",
-      opt: [
-        "12",
-        "10", 
-        "13"
-    ],
+    { 
+        quest: "How many months are there in Ethiopian calendar?",
+        opt: [
+            "12",
+            "10", 
+            "13"
+        ],
     answ: 2
-},
-
+    },
     {quest: "What country almost managed to colonize Ethiopia?",
       opt: ["France",
              "Italy",
              "United Kingdom",
             ],
              answ: 1
-},
-     {quest: "What is the name of Ethiopian bread?",
+    },
+    {quest: "What is the name of Ethiopian bread?",
      opt: ["doughnut",
            "croissant",
            "injera",
           ],
            answ: 2
-},
+    },
       {quest: "What is the population of Ethiopia?",
       opt: ["50 million",
             "110 million",
             "75 million"],
            answ: 1
-},
-{    quest : "What is the name of the popular Ethiopian dance?",
-     opt:["Eskesta",
-           "Rumba",
-           "Azonto"],
-           answ: 0
-},
-    ],
-  
-    // HTML ELEMENTS
-   // htmlBox: null, // HTML quiz container
-   // htmlQuestion: null, // HTML question wrapper
-   // htmlAnswer: null, // HTML answers wrapper
-  
-    now: 0, // current question
-    score: 0, // current score
-  
-    // (B) INIT QUIZ HTML
-    init: function(){
-      quiz.htmlBox = document.getElementById("ethioQuiz");
-  
-      // (B2) QUESTIONS SEction
-     quiz.htmlQuestion = document.createElement("div");
-     quiz.htmlQuestion.id = "quizQuestion";
-     quiz.htmlBox.appendChild(quiz.htmlQuestion);
-  
-      // (B3) ANSWERS SECTION
-      quiz.htmlAnswer = document.createElement("div");
-      quiz.htmlAnswer.id = "quizAnswer";
-      quiz.htmlBox.appendChild(quiz.htmlAnswer);
-  
-      // (B4) GO!
-      quiz.draw();
     },
-  
-    // (C) DRAW QUESTION
-    draw: function(){
-      quiz.htmlQuestion.innerHTML = quiz.data[quiz.now].quest;
-  
-      // (C2) OPTIONS
-      quiz.htmlAnswer.innerHTML = "";
-      for (let i in quiz.data[quiz.now].opt) {
-        let radio = document.createElement("input");
-        radio.type = "radio";
-        radio.name = "quiz";
-        radio.id = "quizo" + i;
-        quiz.htmlAnswer.appendChild(radio);
-        let label = document.createElement("label");
-        label.innerHTML = quiz.data[quiz.now].opt[i];
-        label.setAttribute("for", "quizo" + i);
-        label.dataset.idx = i;
-        label.addEventListener("click", quiz.select);
-        quiz.htmlAnswer.appendChild(label);
-      }
+    {  quest : "What is the name of the popular Ethiopian dance?",
+        opt:["Eskesta",
+            "Rumba",
+            "Azonto"],
+            answ: 0
     },
-    
-    // (D) OPTION SELECTED
-    select: function(){
-      // (D1) DETACH ALL ONCLICK
-      let all = quiz.htmlAnswer.getElementsByTagName("label");
-      for (let label of all) {
-        label.removeEventListener("click", quiz.select);
-      }
+    { quest : "What is the name of the Ethiopian honey wine?",
+    opt:["Tej",
+        "Pinot-Grigio",
+        "Merlot"],
+        answ: 0
+    },
+
+    { quest : "Which year is currently in Ethiopia?",
+    opt:["2021",
+        "2005",
+        "2014"],
+        answ: 2 
+    },
+    { quest : "Which sport is Ethiopia famous for?",
+    opt:["Basketball",
+        "Running",
+        "Tennis"],
+        answ: 1
+    },
+    { quest : "What was the name of the last emperor of Ethiopia?",
+    opt:["Emperor Tewodros",
+        "Haile Selasie",
+        "Empress Zawditu"],
+        answ: 2
+    },
+    { quest : "What is Lalibela famous for?",
+    opt:["Rock Hewn Churches",
+        "National Museum",
+        "Axumite Civilization"],
+        answ: 0
+    },
+    { quest : "What is the name of a popular Ethiopian musician?",
+    opt:["Fela Kuti",
+        "Teddy Afro",
+        "Toumani Diabate"],
+        answ: 1
+    },
+    { quest : "What is the name of the Ethiopian Jewish community?",
+    opt:["Falashas",
+        "Afar people",
+        "Tuaregs"],
+        answ: 0
+    },
+    { quest : "What is the name of the hottest place on earth/Ethiopia?",
+    opt:["Sahara",
+        "Gobi",
+        "Danakil"],
+        answ: 2
+    },
+    { quest : "When Ethiopians celebrate their new year?",
+    opt:["July",
+        "September",
+        "January"],
+        answ: 1
+    },
+    { quest : "Which of the countries below is not Ethiopia's neighbour?",
+    opt:["Botswana",
+        "Eritrea",
+        "Kenia"],
+        answ: 0
+    },
+];
+let randomizedQuestionsArray = [];
+let currentQuestionIndex = 0;
+let currentScore = 0;
+let restartButton = document.getElementById('refresh');
+
+function shuffle(array) {
+    var currentIndex = array.length, randomIndex;
   
-      // (D2) CHECK IF CORRECT
-      let correct = this.dataset.idx == quiz.data[quiz.now].answ;
-      if (correct) { 
-        quiz.score++; 
-        this.classList.add("correct");
-      } else {
-        this.classList.add("wrong");
-      }
-    
-      // (D3) NEXT QUESTION OR END GAME
-      quiz.now++;
-      setTimeout(function(){
-        if (quiz.now < quiz.data.length) { quiz.draw(); } 
-        else {
-          quiz.htmlQuestion.innerHTML = `You have answered ${quiz.score} of ${quiz.data.length} correctly.`;
-          quiz.htmlAnswer.innerHTML = "";
-        }
-      }, 1000);
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
     }
-  };
-  window.addEventListener("load", quiz.init);
-  */
+   
+  
+    return array;
+}
+
+function displayQuestion(question){
+  const questionNumber = currentQuestionIndex + 1;
+  document.getElementById('quizQuestion').innerHTML = questionNumber + '- ' + question.quest;
+  document.getElementById('option1').innerHTML = question.opt[0];
+  document.getElementById('option2').innerHTML = question.opt[1];
+  document.getElementById('option3').innerHTML = question.opt[2];
+}
+
+function checkIfGameFinished(){
+  if (currentQuestionIndex >= randomizedQuestionsArray.length){
+    console.log('Game over');
+    if (currentScore >= 12){
+      alert('Congratulations! You exploration is succesful!')
+    }
+    else{
+      alert('Oops! Try one more time!');
+    }
+  }
+  
+}
+
+function validateAnswer(event){
+  const answer = event.target.getAttribute('data-index');
+  const currentQuestion =  randomizedQuestionsArray[currentQuestionIndex];
+  if (parseInt(answer) === parseInt(currentQuestion.answ)){
+    currentScore = currentScore + 1 ;
+  }
+  else{
+    console.log('wrong answer');
+  }
+  document.getElementById('quizScore').innerHTML = currentScore;
+  currentQuestionIndex = currentQuestionIndex + 1;
+  if (currentQuestionIndex <  randomizedQuestionsArray.length){
+    displayQuestion(randomizedQuestionsArray[currentQuestionIndex]);
+  }
+  checkIfGameFinished();
+}
+
+window.addEventListener("load",function (){
+  let answersArray = document.querySelectorAll(".answer");
+  answersArray.forEach(function(elem) {
+    elem.addEventListener("click", validateAnswer);
+  });
+
+  randomizedQuestionsArray = shuffle(questionArray);
+  displayQuestion(randomizedQuestionsArray[currentQuestionIndex]);
+});
+
+restartButton.addEventListener('click', function(e) {
+  location.reload();
+}, false);
+

@@ -16,19 +16,6 @@ function initMap(){
         { lat: 9.31387 , lng: 42.11815},
         { lat: 12.03333 , lng: 39.03333},
     ];
-/*
-    var markers = locations.map(function(location, i) {
-    return new google.maps.Marker({
-    position: location,
-    label: labels[i % labels.length],
-    });
-});
-
-
-var markerCluster = new MarkerClusterer(map, markers,
-    {imagePath: `https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js/m`});
-}
-*/
 
 function addMarker(property){
     const marker = new google.maps.Marker({
