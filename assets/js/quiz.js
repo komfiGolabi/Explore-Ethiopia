@@ -1,3 +1,5 @@
+//quiz questions
+
 const questionArray =  [
     {
       quest : "What is the capital of Ethiopia?",
@@ -147,26 +149,19 @@ let randomizedQuestionsArray = [];
 let currentQuestionIndex = 0;
 let currentScore = 0;
 let restartButton = document.getElementById('refresh');
-
+//randomize the questions
 function shuffle(array) {
     var currentIndex = array.length, randomIndex;
   
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
-  
-      // And swap it with the current element.
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
-   
-  
-    return array;
+     return array;
 }
-
+//questions and answer options
 function displayQuestion(question){
   const questionNumber = currentQuestionIndex + 1;
   document.getElementById('quizQuestion').innerHTML = questionNumber + '- ' + question.quest;
@@ -174,7 +169,7 @@ function displayQuestion(question){
   document.getElementById('option2').innerHTML = question.opt[1];
   document.getElementById('option3').innerHTML = question.opt[2];
 }
-
+//finishing the quiz
 function checkIfGameFinished(){
   if (currentQuestionIndex >= randomizedQuestionsArray.length){
     console.log('Game over');
@@ -187,7 +182,7 @@ function checkIfGameFinished(){
   }
   
 }
-
+//checking the correct answer
 function validateAnswer(event){
   const answer = event.target.getAttribute('data-index');
   const currentQuestion =  randomizedQuestionsArray[currentQuestionIndex];

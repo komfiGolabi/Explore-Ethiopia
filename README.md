@@ -17,21 +17,26 @@ Explore Ethiopia is a website for all types of users, users curious about the wo
 
 
 ### Navigation Bar
- Navigation Bar is simple, containing a page title as well, as two liks, to homepage  and contact page.
+ Navigation Bar is simple, containing a page title as well, as two links, to homepage  and contact page.
 
 
 ###  Footer
-Footer will be pretty basic, containing the copyright and a link to contact us page. It will have colors matching the navigation bar.
+Footer will be pretty basic, containing the copyright only. It will have colors matching the navigation bar.
 
-![Footer]
 
 ### Home Page:
 
-Homepage will include basic navbar and a footer in the same color. It will have a cover image that shows the beauty of Ethiopia. Underneath would like to attach another photo and a statement with a page introduction. It will have a simple quiz with questions about Ethiopia as a form of entartaining the user and broadening the knowledge about the country.
+Homepage will include basic navbar and a footer in the same color. It will have a cover image that shows the beauty of Ethiopia. Underneath would like to attach another photo and a statement with a page introduction.
+ It will have a simple quiz with questions about Ethiopia as a form of entartaining the user and broadening the knowledge about the country.
 ![quiz](assets/images/quiz.jpg)
+
  A map using Google Map API will be added with markers showing the top places that are worthy of a visit.Once marker is clicked it will offer more information about the chosen place.
 
- ![MAp before clicking the marker](assets/images/map.jpg)
+ Map before clicked marker:
+
+ ![Map before clicking the marker](assets/images/map.jpg)
+
+ Map with the marker content:
 
  ![Map after clicking a marker](assets/images/map-content.jpg)
 
@@ -73,7 +78,7 @@ This section will provide a contact form where user will be able to get in touch
 
 
 ## Wireframes
- [Wireframes]()
+ [Wireframes](https://docs.google.com/document/d/1_amy2gH7-QwgXN2QkiMYYarJNrZ2PKePnoOQfVxEdhQ/edit?usp=sharing)
 
 
 
@@ -116,8 +121,7 @@ Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from
  * Navbar Menu was taken from Whiskey Drop Project from Code Institute with Bootstrap, but I simplified it and added my own styling with CSS.
  * Used Bootstrap for the responsive structure in whole project.
  * [footer taken from Bootstrap](https://getbootstrap.com/docs/4.6/examples/sticky-footer/)
- * [quiz](https://code-boxx.com/simple-javascript-quiz/) and help from my mentor Antonio Rodriquez
- I used the structure of the code, I changed it for my needs and styled it to match the page.
+ * [quiz](https://code-boxx.com/simple-javascript-quiz/), the code seemed overly complicated in the website, so with help of my mentor Antonio Rodriguez, I rewrote the code, so the effect would be the same, but with my understanding of Javascript and with simplified code.
  * Booking form was taken from the Bootstrap component section and modified for the project.
  [Form- form control](https://getbootstrap.com/docs/4.6/components/forms/)
 
@@ -133,9 +137,14 @@ Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from
 
 ## Handling Bugs and what is remaining
 ### My struggles
-* Javascript, especially quiz section.
+* Javascript, especially quiz section, was rewriting the previously used code, so it would be easier for me to understand and find all the connections.
+* watched many tutorials about quizes in Javascript , as well as the Google API, so I could fully understand the concept.
 * Google Maps APIS , had to add an API key everytime I was starting my repository from Github.
 ### Existing Bugs
+
+* quiz buttons still show default color they are pressed
+* right padding on the map section in mobile device should be smaller, didn't manage to fix it
+* refresh button of the quiz doesn't display nicely on devices under 280px
 
 
 
@@ -153,16 +162,37 @@ Logo and Icons used free icons from [Font Awesome](https://fontawesome.com/?from
 * After testing Homepage in direct input, there were no errors or warnings
 * contact page showed no errors, but had few warnings regarding the type for assingment to javascript.
 
+
 ![image of passed html validator page](assets/images/html-validation.jpg)
 
 [CSS Validator Page](https://jigsaw.w3.org/css-validator/)
 * Code from style.css was copied as a direct input into the CSS validator page and no errors were found.
 
+Both pages were regularly going through the validation pages and above information is based on the final stage of testing.
+
+* Javascript code was tested in JShint and underneath are the result of the final code passed through the validation.
+
+Map markers:
+
+![Map markers validation page](assets/images/map-jshint.jpg)
+
+Quiz:
+
+![Quiz validation page](assets/images/quiz-jshint.jpg)
+
+Form:
+
+![Form validation page](assets/images/form-jshint.jpg)
+
+
 
 
 Google Dev Tool: Lighthouse 
 
- rt.  
+![Desktop Lighthouse Testing](assets/images/desktop-lighthouse.jpg)
+![Mobile Lighthouse Testing](assets/images/mobile-desktop.jpg)
+
+Lighthouse testing was fluctuating slightly due to the course of the project and the photos are showing the final results.
 
 
 * Website was tested on various browsers: Chrome, Microsoft Edge and Mozzila Firefox and on all of those performed well.
@@ -173,11 +203,14 @@ Google Dev Tool: Lighthouse
  * information is basic, but gives me a lot of interested facts about Ethiopia I wasn't aware of due to the quiz and showed me places where I should go for my first time travelling to Ethiopia
  * I found it easy to move around the page and had no problem to find what I was looking for.
  * I could easily contact the company with my queries and I had a confirmation email once I had my query send.
+ * The quiz was very enetrtaining and made me realize I don't know much about Ethiopia at all, repeated the quiz few times and it made me learn even more.
 
 
  ### Returning User
  * it was easy for me to find information about the places I wanted to visit
  * I had no problems with sending the messages to the company.
+ * I enjoyed playing the little quiz game, to see if I remembered all the information well, always worth cementing the knowledge with a bit of fun. 
+ * still finding new things to explore and visit.
 
 
 

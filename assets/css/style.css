@@ -1,7 +1,7 @@
 body {
     background-color: #E8E09A;
     color:#343A40;
-    font-family: "Ubuntu", sans serif;
+    font-family: "Ubuntu",sans-serif;
     padding-top: 60px;
     margin-bottom:-16px;
 
@@ -65,12 +65,12 @@ header li a:hover {
   align-items:center;
   justify-content:center;
   position: relative;
-  }
+}
 
-  .cover-image img {
+.cover-image img {
     height:550px;
     width: 100%; 
-  }
+}
 
 /*-------------Intro Section---------------*/
 .top-heading {
@@ -83,8 +83,7 @@ header li a:hover {
     color:#343A40;
 
 }
-.intro-image
- {
+.intro-image{
     height:auto;
     width:100%;
     margin-bottom: 50px;
@@ -110,7 +109,6 @@ header li a:hover {
 .form-images{
     max-width:100%;
     padding-top:22px;
-
 }
 #addis,
 #lalibela,
@@ -196,7 +194,7 @@ h2{
   
 
 .answer{
-    background-color: #E8E09A;
+    background-color:#E8E09A;
     border-color: #E8E09A;
     border-radius: 10px;
     color: #343A40;
@@ -252,7 +250,7 @@ h2{
     margin-left:30px;
     margin-bottom:10%;
     align-items: center;
-    padding-right:-15px;
+    padding-right:0;
 
 
 }
@@ -281,9 +279,6 @@ h2{
     font-weight:bold;
     color:#343A40;
 }
-.mark-box{
-    
-}
 
 .places-link:hover {
     text-decoration: none;
@@ -296,7 +291,8 @@ h2{
     padding-bottom:20px;
 }
 
-.places-content{
+.places-content,
+.marker-image{
     padding-left:15px;
 }
 
@@ -340,8 +336,7 @@ h2{
     .intro-text{
         font-size: medium;
     }
-    
-    
+   
 }
 
 @media screen and (min-width:341px) and (max-width:453px){
